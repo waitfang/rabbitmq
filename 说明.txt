@@ -14,5 +14,28 @@ rabbitmq:
 net stop RabbitMQ && net start RabbitMQ
 
 
+win10下修改rabbitmq默认端口
+
+参考地址： https://www.jianshu.com/p/5319f16dd0aa
+
+
+rabbitmq.config目录并非安装目录下面的etc，默认是在 C:\Users\%USERNAME%\AppData\Roaming\RabbitMQ 下，这一点在安装目录下面的etc目录下的readme.txt中有说明。 说明如下：
+
+file is %APPDATA%\RabbitMQ\rabbitmq.config.
+ 
+
+{rabbitmq_management,
+	{listener, [{port,     8060},
+                {ip,       "172.16.31.229"},
+                {ssl,      false}]}
+				
+				
+
+执行 rabbitmq-service.bat stop 停止服务
+
+执行 rabbitmq-service.bat install 重新安装服务，这时才会重新加载config文件
+
+执行 rabbitmq-service.bat start 开启服务
+
 
 
