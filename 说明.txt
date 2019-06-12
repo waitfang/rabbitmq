@@ -1,0 +1,18 @@
+erlang  下载地址：http://www.erlang.org/downloads
+rabbitmq下载地址：https://www.rabbitmq.com/install-windows.html
+
+设定地址：
+https://www.cnblogs.com/ericli-ericli/p/5902270.html
+
+rabbitmq:
+
+管理地址：http://localhost:15672/
+
+账号密码：admin/admin
+
+
+net stop RabbitMQ && net start RabbitMQ
+
+
+
+
