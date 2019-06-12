@@ -14,7 +14,7 @@ rabbitmq:
 net stop RabbitMQ && net start RabbitMQ
 
 
-win10下修改rabbitmq默认端口
+win10下修改rabbitmq默认端口 ，管理地址：http://172.16.31.229:8060/#/queues
 
 参考地址： https://www.jianshu.com/p/5319f16dd0aa
 
